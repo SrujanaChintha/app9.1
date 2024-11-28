@@ -39,10 +39,3 @@ export class LifecycleDemoComponent
     console.log('ngOnDestroy: Component is being destroyed');
     clearInterval(this.intervalId);
   }
-
-  startCounter() {
-    this.intervalId = setInterval(() => {
-      this.counter++;
-    }, 1000);
-  }
-}
